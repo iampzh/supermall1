@@ -1,6 +1,11 @@
 import {request} from "./request"
-export function home_a(){
+export function getHomeBannerDate(){
     return request({
-        url:"/home_a"
+        url:"/home/banner"
+    })
+}
+export function getHomeRecommands(){
+    return request({
+        url:"/home/recommands"
     })
 }
